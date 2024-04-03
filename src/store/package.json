@@ -1,0 +1,12 @@
+{
+  "name": "j-store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["store", "ssr", "react", "react18"],
+  "author": "jinech",
+  "license": "ISC"
+}
