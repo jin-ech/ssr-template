@@ -10,7 +10,7 @@ import { Suspense } from "react";
 //     return res.json();
 // };
 
-const Layout = ({ children, team1, team2 }) => {
+const Layout = ({ children }) => {
     // const { data } = await getData();
 
     return (

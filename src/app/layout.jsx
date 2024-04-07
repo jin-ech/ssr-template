@@ -24,6 +24,7 @@ const RegistryLayout = ({ children }) => {
   );
 };
 
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -36,6 +37,7 @@ export default function RootLayout({ children }) {
       <body>
         <header>layout header</header>
         <main>
+          <h1>{process.env.ENV_TEST}</h1>
           <RegistryLayout>
             {children}
           </RegistryLayout>

@@ -7,7 +7,7 @@ import { store } from '../store';
 
 import Nav from './_components/nav';
 
-console.log('store: ', store);
+// console.log('store: ', store);
 
 export default () => {
     const [state, setState] = useStore(store);
