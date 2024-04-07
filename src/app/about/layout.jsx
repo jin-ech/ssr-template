@@ -1,9 +1,6 @@
 import Link from "next/link";
 import { Suspense } from "react";
 
-import Demo from "../../components/demo";
-import { Button } from "antd";
-
 // export const getData = async () => {
 //     const res = await fetch('http://localhost:3000/api', {
 //         cache: 'no-cache',
@@ -13,7 +10,7 @@ import { Button } from "antd";
 //     return res.json();
 // };
 
-export default ({ children }) => {
+const Layout = ({ children, team1, team2 }) => {
     // const { data } = await getData();
 
     return (
@@ -36,3 +33,5 @@ export default ({ children }) => {
         </div>
     );
 };
+
+export default Layout;
