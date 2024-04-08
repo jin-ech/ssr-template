@@ -8,14 +8,14 @@ const nextConfig = {
     // 去掉html文件的X-POWER-BY Next.js 请求标头
     poweredByHeader: false,
 
-    // 设置静态资源请求baseurl 类似 publicPath
-    // assetPrefix: isProd ? '' : '/test',
+    // 设置static静态资源请求baseurl 类似 publicPath
+    // assetPrefix: isProd ? 'http://127.0.0.1:3000/' : '',
 
     // 设置页面请求baseUrl 比如访问路由/team => /basePath/team
     // basePath: '/basePath',
 
     // 自定义打包目录而不是.next目录
-    // distDir: 'build',
+    // distDir: 'dist',
 
     // typescript校验错误依旧执行打包
     // ignoreBuildErrors: true,
