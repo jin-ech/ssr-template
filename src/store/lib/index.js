@@ -6,10 +6,10 @@ import {
 } from 'immer';
 import { getUuid, isEqual } from './utils';
 
-export const createStore = (initState: any) => {
+export const createStore = (initState = {}) => {
     const __storeKey = getUuid();
     // 订阅列表
-    const listeners: Set<() => {}> = new Set();
+    const listeners = new Set();
     // 创建代理对象
     const createProxyData = data => {
         return data;

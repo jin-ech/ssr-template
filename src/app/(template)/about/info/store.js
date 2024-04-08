@@ -1,5 +1,5 @@
 
-import { createStore } from '@/store';
+import { createStore } from '@/store/lib';
 
 const store = createStore({
     count: 0,

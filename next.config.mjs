@@ -21,15 +21,26 @@ const nextConfig = {
     // ignoreBuildErrors: true,
 
     // 请求重定向
-    redirects: async () => ([
-        {
-            source: '/',
-            // 要重定向的路径
-            destination: '/team',
-            // 如果 true 将使用 308 状态代码，指示客户端/搜索引擎永久缓存重定向，如果 false 将使用 307 状态代码，该状态代码是临时且不缓存的
-            permanent: true,
+    redirects: async () => ([{
+        source: '/',
+        // 要重定向的路径
+        destination: '/team',
+        // 如果 true 将使用 308 状态代码，指示客户端/搜索引擎永久缓存重定向，如果 false 将使用 307 状态代码，该状态代码是临时且不缓存的
+        permanent: true,
+    }]),
+
+    webpack: (
+        config, {
+            buildId,
+            dev,
+            isServer,
+            defaultLoaders,
+            nextRuntime,
+            webpack
         }
-    ])
+    ) => {
+        return config
+    }
 };
 
 export default nextConfig;

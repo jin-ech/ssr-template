@@ -1,8 +1,10 @@
 'use client'
 
 import { Button, Divider, Tag } from 'antd';
-import { useStore } from '@/store';
+import { useStore } from '@/store/lib';
 import { store, otherStore } from '../store';
+
+import styles from './index.module.scss';
 
 const A = () => {
     const [state, setState] = useStore(store);
@@ -92,6 +94,12 @@ export default () => {
     return (
         <div>
             <h1>Concat Page</h1>
+            <style jsx>{`
+                h1 {
+                    color: green;
+                }
+            `}</style>
+            <div className={styles['text-color']}>sass test</div>
             <Card>
                 <A />
                 <Divider />
