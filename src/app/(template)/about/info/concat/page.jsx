@@ -1,17 +1,13 @@
 'use client'
 
 import { Button, Divider, Tag } from 'antd';
-import { useStore } from 'jcstore';
+import { useStore } from '@/store/lib';
 import { store, otherStore } from '../store';
-import type { IniState } from '../store';
 
 import styles from './index.module.scss';
 
-const s2 = { value: 0 };
-
 const A = () => {
-    const [state, setState] = useStore<IniState>(store);
-
+    const [state, setState] = useStore(store);
     return (
         <div>
             <h1>A</h1>
@@ -31,7 +27,7 @@ const A = () => {
     );
 };
 const B = () => {
-    const [state, setState] = useStore<IniState>(store);
+    const [state, setState] = useStore(store);
     return (
         <div>
             <h1>B</h1>
@@ -44,14 +40,13 @@ const B = () => {
             </ul>
             <Button
                 type='primary'
-                onClick={() => setState(draft => { draft.detail.list[1].name = `${+new Date()}` })}
+                onClick={() => setState(draft => { draft.detail.list[1].name = +new Date() })}
             >change 2th</Button>
         </div>
     );
 };
 const C = () => {
-    const [state, setState] = useStore<IniState>(store);
-
+    const [state, setState] = useStore(store);
     return (
         <div>
             <h1>C</h1>
@@ -72,7 +67,7 @@ const C = () => {
 };
 
 const D = () => {
-    const [state, setState] = useStore<typeof s2>(otherStore);
+    const [state, setState] = useStore(otherStore);
     return (
         <div>
             <h1>D</h1>

@@ -576,14 +576,6 @@ isexe@^2.0.0:
   resolved "https://registry.npmmirror.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
   integrity sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==
 
-jcstore@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.npmjs.org/jcstore/-/jcstore-1.0.2.tgz#64f177af7cb5b4cdf16669b290538aec4f3e534c"
-  integrity sha512-Ynj4/2fmLFZdn1DwJvgCGiylsRBshp/PvDln5PTJCwkTqIaxbqhyc/Kf0UyV8kuce0SSlWwuUEcHhcBwA4XTCA==
-  dependencies:
-    immer "^10.0.4"
-    react "^18.2.0"
-
 "js-tokens@^3.0.0 || ^4.0.0":
   version "4.0.0"
   resolved "https://registry.npmmirror.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -1067,7 +1059,7 @@ react-is@^18.2.0:
   resolved "https://registry.npmmirror.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
-react@^18, react@^18.2.0:
+react@^18:
   version "18.2.0"
   resolved "https://registry.npmmirror.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
