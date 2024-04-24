@@ -2,7 +2,7 @@
 
 import { Button, Tag } from "antd";
 
-import { useStore } from "@/store";
+import { useStore } from "jcstore";
 import { store } from '../store';
 
 import Nav from './_components/nav';
