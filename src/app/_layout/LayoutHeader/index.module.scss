@@ -1,0 +1,36 @@
+.layout-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    border-bottom: 1px solid #eee;
+    height: 56px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+
+    a {
+        padding: 8px 12px;
+        font-size: 16px;
+        // color: $text-color;
+    }
+    
+    
+    .logo {
+        flex-basis: 180px;
+        flex-shrink: 0;
+        font-size: 16px;
+    }
+    
+    .menu {
+        flex: 1;
+    }
+    
+    .user {
+        flex-basis: 72px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+}

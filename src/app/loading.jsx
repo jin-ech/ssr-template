@@ -1,6 +1,9 @@
+import { Spin } from "antd";
 
 export default () => {
     return (
-        <div>loading...</div>
+        <Spin spinning>
+            <div style={{ height: 480 }} />
+        </Spin>
     );
 }

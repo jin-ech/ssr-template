@@ -1,0 +1,23 @@
+$primary-color: #1677ff;
+$link-color: #1677ff;
+$success-color: #02CA6A;
+$warning-color: #faad14;
+$error-color: #f5222d;
+$disabled-color: rgba(0, 0, 0, 0.25);
+$text-color: rgba(0, 0, 0, 0.65);
+$border-radius: 4px;
+$border-color: #d9d9d9;
+$body-min-width: 1280px;
+
+:export {
+    primary-color: $primary-color;
+    link-color: $link-color;
+    success-color: $success-color;
+    warning-color: $warning-color;
+    error-color: $error-color;
+    disabled-color: $disabled-color;
+    text-color: $text-color;
+    border-radius: $border-radius;
+    border-color: $border-color;
+    body-min-width: $body-min-width;
+}

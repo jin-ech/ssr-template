@@ -1,3 +1,4 @@
+
 const isProd = process.env.NODE_ENV === 'production';
 
 /** @type {import('next').NextConfig} */
@@ -21,13 +22,13 @@ const nextConfig = {
     // ignoreBuildErrors: true,
 
     // 请求重定向
-    redirects: async () => ([{
-        source: '/',
-        // 要重定向的路径
-        destination: '/team',
-        // 如果 true 将使用 308 状态代码，指示客户端/搜索引擎永久缓存重定向，如果 false 将使用 307 状态代码，该状态代码是临时且不缓存的
-        permanent: true,
-    }]),
+    // redirects: async () => ([{
+    //     source: '/',
+    //     // 要重定向的路径
+    //     destination: '/me',
+    //     // 如果 true 将使用 308 状态代码，指示客户端/搜索引擎永久缓存重定向，如果 false 将使用 307 状态代码，该状态代码是临时且不缓存的
+    //     permanent: true,
+    // }]),
 
     webpack: (
         config, {
@@ -39,7 +40,7 @@ const nextConfig = {
             webpack
         }
     ) => {
-        return config
+        return config;
     }
 };
 

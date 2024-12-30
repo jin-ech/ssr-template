@@ -1,9 +1,10 @@
 
-export default () => {
+import './index.scss';
 
+export default () => {
     return (
-        <div>
-            team
+        <div className='container'>
+            team123
         </div>
-    )
+    );
 };

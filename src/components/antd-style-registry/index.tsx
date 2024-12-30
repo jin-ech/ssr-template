@@ -5,11 +5,12 @@ import 'antd/dist/reset.css';
 import { AntdRegistry } from '@ant-design/nextjs-registry';
 import zhCN from 'antd/locale/zh_CN';
 
-import moment from "moment";
+import dayjs from 'dayjs';
+import 'dayjs/locale/zh-cn';
 
 import '/public/antd.min.css';
 
-moment.locale('zh-cn');
+dayjs.locale('zh-cn');
 
 const AntdStyleRegistry: React.FC<React.PropsWithChildren> = ({ children }) => {
     return (
