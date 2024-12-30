@@ -35,7 +35,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-/public/antd.min.css
+# /public/antd.min.css
 
 /dist
 /build
